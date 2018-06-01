@@ -1,0 +1,8 @@
+<div>
+    <app-child1 (movieEmitter)="movieSelected($event)"> </app-child1> 
+</div>
+
+<div>
+<app-child2 [movieSelected]="selectedMovie"></app-child2>
+</div>
+

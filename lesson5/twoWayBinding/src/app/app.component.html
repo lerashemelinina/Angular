@@ -1,0 +1,14 @@
+
+  <div class="form-group">
+     <label>Search for:</label>
+<input type="text" class="form-control" placeholder="Search" [(ngModel)]="userInput">
+<button type="submit" class="btn btn-default" (click)="checkUserInput()">Submit</button>
+</div> 
+<h1>{{msg}}</h1>
+<ul *ngIf="!msg">
+  <li *ngFor = "let item of userChoiceArray; let i=index" [ngClass]="{'left':i%2==0}">
+   
+    {{item}}
+   
+  </li>
+</ul>

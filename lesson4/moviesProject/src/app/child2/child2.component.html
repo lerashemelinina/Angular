@@ -1,0 +1,13 @@
+<h1 *ngIf="movieSelected">selected movie:{{movieSelected.movie_name}}</h1>
+
+<table border="1" *ngIf="movieSelected">
+<tr>
+    <th>price:</th>
+<th>date:</th>
+</tr>
+
+<td>{{movieSelected.price}}</td>
+<td>{{movieSelected.movie_date}}</td>
+
+</table>
+

@@ -1,0 +1,12 @@
+<h1>{{msg.title}}</h1>
+
+<div *ngFor="let x of movieArray">
+  <ol>
+    
+    <button (click)="movieSelected(x)" class="btn btn-primary">
+      {{x.movie_name}}
+    </button>
+ 
+  </ol>
+
+</div>

@@ -1,0 +1,19 @@
+
+<table class="table" align="center">
+ <tr>
+   <th>Diameter</th>
+   <th>Slices</th>
+   <th>Toppings</th>
+   <th>Price</th>
+ </tr>
+
+ <tr *ngFor="let pizza of localPizzaArray">
+
+<td>{{pizza.diameter}}</td>
+<td>{{pizza.slices}}</td>
+<td>{{pizza.toppings}}</td>
+<td>{{pizza.price}}</td>
+
+ </tr>
+
+</table>

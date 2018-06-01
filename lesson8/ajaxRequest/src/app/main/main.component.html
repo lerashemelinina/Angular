@@ -1,0 +1,14 @@
+<div class="jumbotron text-center">
+    <div *ngIf="localPersonInfo.personInfo.page">
+        <div *ngFor = "let x of localPersonInfo.personInfo.data">
+          <p>first_name:{{x.first_name}}</p>
+          <p>last_name:{{x.last_name}}</p>
+          <p>full_name:{{x.first_name}} {{x.last_name}}</p>
+          <img [src]="x.avatar"/>
+        </div>
+    </div>
+
+    <div *ngIf="!localPersonInfo.personInfo.page">
+        please wait!!!
+    </div>
+</div>

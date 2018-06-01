@@ -1,0 +1,13 @@
+<table border="1" width="35%">
+    <tr> 
+    <td></td>
+        <td *ngFor="let y of arr">  {{y}}</td>
+      </tr>
+
+  <tr *ngFor="let x of arr">
+      <td>{{x}}</td>
+    <td *ngFor="let y of arr"> {{y*x}}</td>
+   
+  </tr>
+</table>
+
